@@ -1,0 +1,186 @@
+@font-face{
+  font-family: Rubik;
+  src: url('./assets/Rubik-Regular.ttf');
+}
+
+*{
+  font-family: Rubik;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9ff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container-app{
+  min-height: 100vh;
+  background-image: url('./assets/background.png');
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.create-card{
+  background-color: white;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.29);
+}
+
+.header-container {
+  height: 8vh;
+  border-bottom: 1px solid lightgray; 
+  background-color: #000;
+  color: white;
+}
+
+.header-search{
+  width: 80%;
+  border: none;
+  /* border-bottom: 1px solid lightgray; */
+  color: white;
+  background-color: #222222;
+  padding: 1px 5px;
+}
+.header-search:focus{
+  outline: none;
+}
+
+.header-dropdown{
+  cursor: pointer;
+  text-decoration: none;
+  color: #424242;
+}
+
+.sidebar-container{
+  width: 20%;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid lightgray;
+}
+
+.sidebar-card{
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 1px solid lightgray !important;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.sidebar-card-header{
+  background-color: #ffffff;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.sidebar-card-body{
+  background-color: #f2f7f7;
+}
+
+.super-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-items-container{
+  /* background-color: #fafafa; */
+  width: 80%;
+  margin: 0;
+  padding: 20px 20px 0px 20px;
+  overflow: auto;
+}
+
+.dashboard-item-card{
+  width: 21%;
+  margin: 2%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 40%;
+  box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.29);
+}
+
+.dashboard-item-card-picture{
+  height: 75%;
+  border-bottom: 1px solid lightgray;
+}
+
+.dashboard-item-card-body{
+  height: 25%;
+  padding: 10px;
+}
+
+.account-link {
+  color: #5AA5DA;
+}
+
+#request-button {
+  background-color: #5AA5DA91;
+  border-color: #ffffff;
+  margin-top: 50px;
+}
+
+#request-button:hover {
+  background-color: #5AA5DA;
+  border-color: #ffffff;
+  margin-top: 50px;
+}
+
+.button-checks {
+  background-color: #5AA5DA91;
+  border-color: #ffffff;
+}
+
+.button-checks:hover {
+  background-color: #5AA5DA;
+  border-color: #ffffff;
+}
+
+.button-checks:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #5AA5DA;
+  border-color: #ffffff;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 1.1em;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  color: white;
+  background-color: #5AA5DA91;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: #5AA5DA;
+}
+
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}

@@ -1,0 +1,22 @@
+.item-container-1{
+  width: 80%;
+  margin: 0;
+  padding: 20px 20px 0px 20px;
+  overflow: auto;
+}
+
+.item-container{
+  background-color: #ffffff;
+  min-height: calc(80vh - 150px);
+  height: fit-content;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.item-card{
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid;
+}
